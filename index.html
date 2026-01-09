@@ -1,118 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Satya Nithin Kumar | Interactive Resume</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+<meta charset="UTF-8">
+<title>Nithin | Interactive Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
 </head>
 <body>
 
-<header>
-    <h1>Desamsetti Satya Nithin Kumar</h1>
-    <p>Cloud Engineer | Software Developer</p>
-    <div class="contact">
-        <span>Pondicherry</span>
-        <span>📞 +91 9667387451</span>
-        <span>📧 desamsettinithin@gmail.com</span>
-    </div>
-</header>
+<div class="cursor"></div>
 
-<nav>
-    <a href="#summary">Summary</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-</nav>
-
-<section id="summary" class="card">
-    <h2>Summary</h2>
-    <p>
-        Motivated Cloud Engineer and Software Developer with strong skills in
-        AWS Cloud, Data Engineering, Python, and Cybersecurity. Passionate
-        about solving real-world problems using cloud technologies and automation.
-    </p>
+<!-- HERO -->
+<section class="hero">
+  <h1>Hi, I'm <span>Nithin</span></h1>
+  <h2 class="typing"></h2>
+  <a href="#projects" class="btn">Explore My Work ↓</a>
 </section>
 
-<section id="education" class="card">
-    <h2>Education</h2>
-    <ul>
-        <li>
-            <strong>B.Tech – Computer & Communication Engineering</strong><br>
-            Sri Manakula Vinayagar Engineering College (2022–2026)<br>
-            CGPA: 7.89
-        </li>
-        <li>
-            <strong>Intermediate – BIEAP</strong><br>
-            Sri Sai Junior College (87%)
-        </li>
-        <li>
-            <strong>ICSE</strong><br>
-            S.D.A High School (76%)
-        </li>
-    </ul>
+<!-- SKILLS -->
+<section class="skills">
+  <h2>Skills</h2>
+  <div class="orbs">
+    <div class="orb">Python</div>
+    <div class="orb">AWS</div>
+    <div class="orb">Java</div>
+    <div class="orb">AI</div>
+    <div class="orb">UI/UX</div>
+  </div>
 </section>
 
-<section id="skills" class="card">
-    <h2>Skills</h2>
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2>Projects</h2>
 
-    <div class="skill">
-        <span>Python</span>
-        <div class="bar"><div style="width:85%"></div></div>
-    </div>
+  <div class="project-card">
+    <h3>🚗 Number Plate Scanner</h3>
+    <p>Computer Vision + OCR</p>
+  </div>
 
-    <div class="skill">
-        <span>Java</span>
-        <div class="bar"><div style="width:75%"></div></div>
-    </div>
-
-    <div class="skill">
-        <span>HTML & CSS</span>
-        <div class="bar"><div style="width:80%"></div></div>
-    </div>
-
-    <div class="skill">
-        <span>AWS Cloud</span>
-        <div class="bar"><div style="width:70%"></div></div>
-    </div>
+  <div class="project-card">
+    <h3>📧 Email Spam Classifier</h3>
+    <p>ML + NLP + Streamlit</p>
+  </div>
 </section>
 
-<section id="projects" class="card">
-    <h2>Projects</h2>
+<!-- TIMELINE -->
+<section class="timeline">
+  <h2>Journey</h2>
 
-    <div class="project" onclick="toggleDetails(this)">
-        <h3>🚗 Number Plate Scanner</h3>
-        <p class="details">
-            Real-time number plate detection using OpenCV and Tesseract OCR.
-            <br>
-            🔗 GitHub: Licence-plate-scanner
-        </p>
-    </div>
+  <div class="event">
+    <span>2022–2026</span>
+    <p>B.Tech – CCE</p>
+  </div>
 
-    <div class="project" onclick="toggleDetails(this)">
-        <h3>📧 Email Spam Classifier</h3>
-        <p class="details">
-            ML-based spam detection using NLP, TF-IDF, and Naive Bayes.
-            <br>
-            🔗 GitHub: Email_spam_classifier
-        </p>
-    </div>
-</section>
-
-<section id="certifications" class="card">
-    <h2>Certifications</h2>
-    <ul>
-        <li>AWS Academy – Cloud Security Foundations</li>
-        <li>AWS Academy – Generative AI Foundations</li>
-        <li>Junior Cybersecurity Analyst</li>
-        <li>NPTEL – Cloud, IoT, Edge & ML</li>
-        <li>Internshala – Programming with Python</li>
-    </ul>
+  <div class="event">
+    <span>2021</span>
+    <p>Python & Cloud Certifications</p>
+  </div>
 </section>
 
 <footer>
-    <p>© 2026 | Designed by Nithin 🚀</p>
+  Built with ❤️ by Nithin
 </footer>
 
 </body>
