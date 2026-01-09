@@ -2,119 +2,128 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  background: #0b0f1a;
-  color: white;
-  overflow-x: hidden;
+  background: #F5F6FA;
+  color: #333;
 }
 
-/* Cursor Glow */
-.cursor {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  background: rgba(0,255,255,0.3);
-  box-shadow: 0 0 25px cyan;
-  transform: translate(-50%, -50%);
+/* Navbar */
+.navbar {
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.navbar h2 {
+  color: #6C63FF;
+}
+
+.navbar a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #6C63FF;
 }
 
 /* Hero */
 .hero {
-  height: 100vh;
+  height: 90vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #FFFFFF, #F0EEFF);
 }
 
 .hero span {
-  color: cyan;
-}
-
-.typing {
-  margin-top: 10px;
-  color: #aaa;
+  color: #6C63FF;
 }
 
 .btn {
-  margin-top: 30px;
-  padding: 12px 25px;
-  border: 1px solid cyan;
-  color: cyan;
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: #6C63FF;
+  color: white;
+  border-radius: 8px;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background: cyan;
-  color: black;
+  background: #554FE8;
 }
 
-/* Skills Orbs */
-.skills {
-  text-align: center;
-  padding: 80px 20px;
+/* Sections */
+.section {
+  padding: 80px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.orbs {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.section h2 {
+  color: #6C63FF;
+  margin-bottom: 20px;
 }
 
-.orb {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: radial-gradient(circle, cyan, transparent);
-  animation: float 4s ease-in-out infinite;
+/* Skills */
+.skill {
+  margin-bottom: 20px;
 }
 
-@keyframes float {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
+.progress {
+  background: #DDD;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress div {
+  height: 10px;
+  width: 0;
+  background: #6C63FF;
+  transition: width 1.2s ease;
 }
 
 /* Projects */
-.projects {
-  padding: 80px;
-}
-
 .project-card {
-  background: rgba(255,255,255,0.05);
-  padding: 30px;
-  margin: 20px 0;
-  border-radius: 15px;
-  transition: transform 0.4s;
+  background: white;
+  padding: 25px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
 }
 
 .project-card:hover {
-  transform: rotateY(10deg) scale(1.05);
+  transform: translateY(-5px);
 }
 
-/* Timeline */
-.timeline {
-  padding: 80px;
+/* Fade animation */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s;
 }
 
-.event {
-  margin: 20px 0;
-  border-left: 3px solid cyan;
-  padding-left: 20px;
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Footer */
 footer {
+  background: white;
   text-align: center;
-  padding: 30px;
-  color: #777;
+  padding: 25px;
+  color: #888;
 }
