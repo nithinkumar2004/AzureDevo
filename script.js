@@ -1,38 +1,25 @@
-// Cursor
-const cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove', e => {
-  cursor.style.left = e.clientX + 'px';
-  cursor.style.top = e.clientY + 'px';
+// Fade on scroll
+const faders = document.querySelectorAll('.fade');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
 });
 
-// Typing Effect
-const roles = [
-  "Cloud Engineer ☁️",
-  "Software Developer 💻",
-  "AI Enthusiast 🤖",
-  "UI/UX Designer 🎨"
-];
+faders.forEach(el => observer.observe(el));
 
-let i = 0, j = 0;
-const typing = document.querySelector('.typing');
+// Skill progress animation
+const bars = document.querySelectorAll('.progress div');
 
-function type() {
-  if (j < roles[i].length) {
-    typing.textContent += roles[i][j++];
-    setTimeout(type, 80);
-  } else {
-    setTimeout(erase, 1500);
-  }
-}
+const skillObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.width = entry.target.dataset.width;
+    }
+  });
+});
 
-function erase() {
-  if (j > 0) {
-    typing.textContent = roles[i].substring(0, --j);
-    setTimeout(erase, 50);
-  } else {
-    i = (i + 1) % roles.length;
-    setTimeout(type, 300);
-  }
-}
-
-type();
+bars.forEach(bar => skillObserver.observe(bar));
