@@ -2,65 +2,85 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Nithin | Interactive Portfolio</title>
+<title>Nithin | Portfolio</title>
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
 </head>
 <body>
 
-<div class="cursor"></div>
+<header class="navbar">
+  <h2>Nithin</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-<!-- HERO -->
 <section class="hero">
-  <h1>Hi, I'm <span>Nithin</span></h1>
-  <h2 class="typing"></h2>
-  <a href="#projects" class="btn">Explore My Work ↓</a>
-</section>
-
-<!-- SKILLS -->
-<section class="skills">
-  <h2>Skills</h2>
-  <div class="orbs">
-    <div class="orb">Python</div>
-    <div class="orb">AWS</div>
-    <div class="orb">Java</div>
-    <div class="orb">AI</div>
-    <div class="orb">UI/UX</div>
+  <div class="hero-text fade">
+    <h1>Hello, I'm <span>Nithin</span></h1>
+    <p>Cloud Engineer • Software Developer • UI Enthusiast</p>
+    <a href="#projects" class="btn">View Projects</a>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="projects">
+<section id="about" class="section fade">
+  <h2>About Me</h2>
+  <p>
+    I am a Computer & Communication Engineering student passionate about
+    cloud technologies, software development, and building clean user
+    experiences using modern tools.
+  </p>
+</section>
+
+<section id="skills" class="section fade">
+  <h2>Skills</h2>
+
+  <div class="skill">
+    <span>Python</span>
+    <div class="progress"><div data-width="85%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>Java</span>
+    <div class="progress"><div data-width="75%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>AWS Cloud</span>
+    <div class="progress"><div data-width="70%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>HTML & CSS</span>
+    <div class="progress"><div data-width="80%"></div></div>
+  </div>
+</section>
+
+<section id="projects" class="section fade">
   <h2>Projects</h2>
 
   <div class="project-card">
-    <h3>🚗 Number Plate Scanner</h3>
-    <p>Computer Vision + OCR</p>
+    <h3>Number Plate Scanner</h3>
+    <p>Computer Vision + OCR using OpenCV & Tesseract</p>
   </div>
 
   <div class="project-card">
-    <h3>📧 Email Spam Classifier</h3>
-    <p>ML + NLP + Streamlit</p>
+    <h3>Email Spam Classifier</h3>
+    <p>ML-based spam detection using NLP & Naive Bayes</p>
   </div>
 </section>
 
-<!-- TIMELINE -->
-<section class="timeline">
-  <h2>Journey</h2>
-
-  <div class="event">
-    <span>2022–2026</span>
-    <p>B.Tech – CCE</p>
-  </div>
-
-  <div class="event">
-    <span>2021</span>
-    <p>Python & Cloud Certifications</p>
-  </div>
+<section id="contact" class="section fade">
+  <h2>Contact</h2>
+  <p>Email: desamsettinithin@gmail.com</p>
+  <p>Location: Pondicherry, India</p>
 </section>
 
 <footer>
-  Built with ❤️ by Nithin
+  © 2026 Nithin • Violet Portfolio
 </footer>
 
 </body>
